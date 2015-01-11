@@ -15,3 +15,24 @@ def double_me(number)
 
   # We must mark that the function definition is completed with the `end` keyword
 end
+
+
+
+
+
+def prompt_user
+  puts "What number would you like to double"
+end
+
+def user_input
+  gets.chomp.to_i
+end
+
+def print_results(result)
+  puts "The number doubled is: " + result
+end
+
+def prompt_user_and_double
+  prompt_user
+  print_results(double_me(user_input))
+end
