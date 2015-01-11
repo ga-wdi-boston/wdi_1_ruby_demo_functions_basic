@@ -279,3 +279,7 @@ def prompt_user_and_double
   print_results(double_me(user_input))
 end
 ```
+
+## Additional Resources
+
+- [Official Ruby 2.2 documentation on Methods](http://ruby-doc.org/core-2.2.0/doc/syntax/methods_rdoc.html)
