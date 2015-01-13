@@ -15,3 +15,27 @@ RSpec.describe "#add" do
     expect(add(-10, 10)).to eq(0)
   end
 end
+
+RSpec.describe "#subtract" do
+  it "subtracts the second number from the first number" do
+    expect(subtract(2, 2)).to eq(0)
+    expect(subtract(10, 2)).to eq(8)
+    expect(subtract(-10, 10)).to eq(-20)
+  end
+end
+
+RSpec.describe "#multiply" do
+  it "multiplies two numbers" do
+    expect(multiply(2, 2)).to eq(4)
+    expect(multiply(10, 2)).to eq(20)
+    expect(multiply(-10, 10)).to eq(-100)
+  end
+end
+
+RSpec.describe "#divide" do
+  it "divides the first number by the second number" do
+    expect(divide(2, 2)).to eq(1)
+    expect(divide(10, 2)).to eq(5)
+    expect(divide(-10, 10)).to eq(-1)
+  end
+end
