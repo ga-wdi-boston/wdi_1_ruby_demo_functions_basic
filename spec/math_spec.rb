@@ -15,3 +15,26 @@ RSpec.describe "#add" do
     expect(add(-10, 10)).to eq(0)
   end
 end
+
+RSpec.describe "#multiply" do
+  it "multiplies two numbers" do
+    expect(multiply(2, 2)).to eq(4)
+    expect(multiply(10, 2)).to eq(20)
+    expect(multiply(10, 0)).to eq(0)
+  end
+end
+
+RSpec.describe "#subtract" do
+  it "subtractss two numbers" do
+    expect(subtract(2, 2)).to eq(0)
+    expect(subtract(10, 2)).to eq(8)
+    expect(subtract(10, 0)).to eq(10)
+  end
+end
+
+RSpec.describe "#add_string" do
+  it "adds two strings" do
+    expect(add_string("Hello", " world")).to eq("Hello world")
+  end
+end
+
